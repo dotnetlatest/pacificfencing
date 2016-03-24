@@ -1,0 +1,168 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+
+<html>
+    <head>
+      <style type="text/css">
+        /* RESET */
+        body, h1, h2, h3, h4, h5, h6, a, em, strong, img, p ol, ul, li, table, thead, tbody, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        }
+        /* END RESET */
+        body {
+        color: #333;
+        font-family: Verdana, sans-serif;
+        font-size: 13px; /*13px*/
+        }
+        h1 {
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 1.0;
+        margin: 40px 0 24px 0;
+              width: 492px;
+          }
+        a, a:visited {
+        color: #6f6f6f;
+        text-decoration: underline;
+        }
+        a:hover, a:focus {
+        text-decoration: none;
+        }
+        p {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 18px;
+              width: 576px;
+          }
+        table {
+          border-style: none;
+              border-color: inherit;
+              border-width: 0;
+              font-size: 13px;
+              line-height: 18px;
+              border-collapse: collapse;
+              width: 788px;
+          }
+
+
+        table td {
+        vertical-align: top;
+        }
+        table td.label {
+        color: #999;
+        text-align: right;
+        }
+        table td.data {
+        color: #333;
+        text-align: left;
+        }
+
+        span.tel {
+        white-space: nowrap;
+        }
+
+          .auto-style1 {
+              width: 607px;
+          }
+
+      </style>
+    </head>
+
+    <body>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" width="567">
+            <!-- HTML -->
+            <table border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td align="center" class="auto-style1">
+                  <table width="550" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="184">
+                          <img src="https://placeimg.com/128/208/arch/grayscale">
+                      </td>
+                      <td width="383">
+                        <h1>Your Pacific Fencing Quote</h1>
+                        
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="auto-style1">
+                  <table width="567" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="200">&nbsp;</td>
+                      <td width="5">&nbsp;</td>
+                      <td width="362">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td width="200" bgcolor="#D6D6D6" height="1"></td>
+                      <td width="5" bgcolor="#D6D6D6" height="1"></td>
+                      <td width="362" bgcolor="#D6D6D6"></td>
+                    </tr>
+                    <tr>
+                      <td width="567" align="left"><p>Dear : <strong><#= RequestAQuote.ContactName #></strong> </p> </td>
+                     </tr>
+                      <tr>
+                        
+                        <td width="567" align="left">
+                          <p>Your request for a quote from pacific Fencing has been recevied. A customer representative will be contact with you withing 24hours.</p>
+
+                            <h3>Request Details</h3>
+                            <p>
+                                <#= RequestAQuote.Description #>
+                            </p>
+
+                        </td>
+                      </tr>
+                    
+                          <tr>
+                            <td width="200">&nbsp;</td>
+                            <td width="5">&nbsp;</td>
+                            <td width="362">&nbsp;</td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" class="auto-style1">
+                  <table width="550" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="left">
+                        <p>
+                          For more information please telephone the  Office on <span class="tel">+44 (0)20 7304 4000</span> or <a href="#">go online</a>. <br />
+                          Find out what&#8217;s on: <a href="#">www.pacificfencing.com</a>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <p>
+                          If you prefer, you can choose to redeem your quote against a membership. If you wish to do so, please telephone the Office on <span class="tel">+44 (0)20 7212 9268</span> or <a href="http://www.roh.org.uk/visit/tickets">go online</a>. <br />
+                          Find out about the levels of membership available: <a href="#">www.pacificfencing.com</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- HTML -->
+          </td>
+        </tr>
+      </table>
+
+    </body>
+  </html>

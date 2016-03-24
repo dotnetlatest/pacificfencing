@@ -22,3 +22,25 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Registration Form*/
+
+#registration label {
+   font-size: 14px;
+}
+#registration input,textarea,select {
+       margin-bottom: 10px;
+}
+
+#registration select{
+       margin-bottom:10px;
+}
+
+#submit-bar{
+    margin: 10px auto;
+    left:250px;
+}
+
+/*button {
+    margin-bottom: 10px;
+}*/

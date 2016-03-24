@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PacificFencing.Core;
 
 namespace PacificFencing.Site.Controllers
 {
@@ -13,17 +14,19 @@ namespace PacificFencing.Site.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [HttpPost]
+        public ActionResult Index(RequestAQuoteModel model)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            if (ModelState.IsValid)
+            {
+                EmailUtility.SendEmail(model);
+                return RedirectToAction("Confirmation");
+            }
+            return View(model);
         }
 
-        public ActionResult Contact()
+        public ActionResult Confirmation()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
